@@ -30,7 +30,14 @@
 .home-two .section-title h2 span{
     background-image:url(../images/shapes/section-title-circle-yellow.png)
 }
-
+section.browswr-support-section.rel.z-1.rpy-100 {
+    background: #efefef;
+    padding: 40px 0px;
+}
+#myModal .modal-dialog {
+    width: 100%;
+    max-width: 100%;
+}
 .whatsappfooter {
   position: fixed;
   bottom: 85px;
