@@ -110,7 +110,7 @@
 <div class="row align-items-center">
 <div class="col-xl-7 col-lg-6">
 <div class="about-image rmb-55 wow fadeInLeft delay-0-2s" style="visibility: visible; animation-name: fadeInLeft;">
-<img src="assets/images/home/screenshot/4.png" alt="Request">
+<img  class="img_li" data-toggle="modal" data-target="#myModal" src="assets/images/home/screenshot/4.png" alt="Request">
 </div>
 </div>
 <div class="col-xl-5 col-lg-6">
@@ -150,7 +150,7 @@ added whereas date and time cannot be changed by Analyst or Reviewer.
 </div>
 <div class="col-xl-7 col-lg-6">
 <div class="browswr-support-image text-lg-right wow fadeInLeft delay-0-2s" style="visibility: visible; animation-name: fadeInLeft;">
-<img src="assets/images/home/screenshot/2.png" alt="">
+<img  class="img_li" data-toggle="modal" data-target="#myModal" src="assets/images/home/screenshot/2.png" alt="">
 </div>
 </div>
 </div>
@@ -162,7 +162,7 @@ added whereas date and time cannot be changed by Analyst or Reviewer.
 <div class="row align-items-center">
 <div class="col-xl-7 col-lg-6">
 <div class="about-image rmb-55 wow fadeInLeft delay-0-2s" style="visibility: visible; animation-name: fadeInLeft;">
-<img src="assets/images/home/screenshot/10.png" alt="Request">
+<img  class="img_li" data-toggle="modal" data-target="#myModal" src="assets/images/home/screenshot/10.png" alt="Request">
 </div>
 </div>
 <div class="col-xl-5 col-lg-6">
@@ -204,7 +204,7 @@ Creator” and Quality User”.
 </div>
 <div class="col-xl-7 col-lg-6">
 <div class="browswr-support-image text-lg-right wow fadeInLeft delay-0-2s" style="visibility: visible; animation-name: fadeInLeft;">
-<img src="assets/images/home/screenshot/8.png" alt="">
+<img  class="img_li" data-toggle="modal" data-target="#myModal" src="assets/images/home/screenshot/8.png" alt="">
 </div>
 </div>
 </div>
@@ -216,7 +216,7 @@ Creator” and Quality User”.
 <div class="row align-items-center">
 <div class="col-xl-7 col-lg-6">
 <div class="about-image rmb-55 wow fadeInLeft delay-0-2s" style="visibility: visible; animation-name: fadeInLeft;">
-<img src="assets/images/home/screenshot/7.png" alt="Request">
+<img  class="img_li" data-toggle="modal" data-target="#myModal" src="assets/images/home/screenshot/7.png" alt="Request">
 </div>
 </div>
 <div class="col-xl-5 col-lg-6">
@@ -255,7 +255,7 @@ creation, modification, including the date, time, and person.
 </div>
 <div class="col-xl-7 col-lg-6">
 <div class="browswr-support-image text-lg-right wow fadeInLeft delay-0-2s" style="visibility: visible; animation-name: fadeInLeft;">
-<img src="assets/images/home/screenshot/11.png" alt="">
+<img  class="img_li" data-toggle="modal" data-target="#myModal" src="assets/images/home/screenshot/11.png" alt="">
 </div>
 </div>
 </div>
@@ -267,7 +267,7 @@ creation, modification, including the date, time, and person.
 <div class="row align-items-center">
 <div class="col-xl-7 col-lg-6">
 <div class="about-image rmb-55 wow fadeInLeft delay-0-2s" style="visibility: visible; animation-name: fadeInLeft;">
-<img src="assets/images/home/screenshot/11.png" alt="Request">
+<img  class="img_li" data-toggle="modal" data-target="#myModal" src="assets/images/home/screenshot/11.png" alt="Request">
 </div>
 </div>
 <div class="col-xl-5 col-lg-6">
@@ -307,7 +307,7 @@ added whereas date and time cannot be changed by Analyst or Reviewer.
 </div>
 <div class="col-xl-7 col-lg-6">
 <div class="browswr-support-image text-lg-right wow fadeInLeft delay-0-2s" style="visibility: visible; animation-name: fadeInLeft;">
-<img src="assets/images/home/screenshot/8.png" alt="">
+<img  class="img_li" data-toggle="modal" data-target="#myModal" src="assets/images/home/screenshot/8.png" alt="">
 </div>
 </div>
 </div>
@@ -390,7 +390,25 @@ added whereas date and time cannot be changed by Analyst or Reviewer.
 <img class="circle-shape" src="assets/images/shapes/circle.png" alt="Shape">
 </footer>
 </div>
-
+<!---modal ---->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+        </div>
+        <div class="modal-body">
+         <img class="link_img" src="">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+<!------->
 
 <button class="scroll-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></button>
 
@@ -416,6 +434,32 @@ added whereas date and time cannot be changed by Analyst or Reviewer.
 
 <script src="assets/js/script.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"773b3df0fe5017a2","version":"2022.11.3","r":1,"token":"52ad871770524b3e8ca1e53094efe67a","si":100}' crossorigin="anonymous"></script>
+
+
+
+<script>
+$(document).ready(function(){
+	$('.img_li').click(function(){
+	let imgSrc = $(this).attr('src');
+	   <!-- let imgapp    = $(".modal-body").append( $(imgSrc)); -->
+    <!-- console.log(imgSrc); -->
+	var img= $(".link_img");
+	var b= img.attr("src", imgSrc);
+	console.log(imgSrc);
+	console.log(b);
+	});
+	
+	<!-- $('img').click(function(){ -->
+	
+	
+	link_img
+	
+<!-- $('img').attr('src',$(this).attr('href')); -->
+<!-- return false; -->
+<!-- }); -->
+	
+});
+</script>
 </body>
 
 </html>
