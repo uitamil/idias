@@ -43,10 +43,10 @@ section.gray_bg.padd1.rpy-100 {
     max-width: 100%;
 }
 .img_li:hover{
-filter: invert(1);
+filter: grayscale(1);
 }
 img.img_li {
-    cursor: pointer;
+       cursor: zoom-in;
 }
 .whatsappfooter {
   position: fixed;
@@ -54,7 +54,7 @@ img.img_li {
   height: 50px;
   z-index: 99;
   width: 50px;
-  right: 0px;
+  right: 25px;
 }
 .list-style-one .row.mt-55 i img {
     filter: invert(1);
@@ -253,7 +253,7 @@ section.dashboard-section.rel.z-1.py-130.rpy-100 {
     text-align: center;
     position: absolute;
     filter: blur(250px);
-    background: #ffbd4f;
+    background: #a3ffb3;
     transform: translate(-50%,-60%);
 }
 
